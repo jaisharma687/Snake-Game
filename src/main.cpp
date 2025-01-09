@@ -178,7 +178,7 @@ int main() {
             game.running = true;
         }
         ClearBackground(bgColor);
-        DrawRectangleLinesEx(Rectangle{(float)offset-5,(float)offset-5,(float)cellSize*cellCount,(float)cellSize*cellCount},5,snakeColor);
+        DrawRectangleLinesEx(Rectangle{(float)offset-10,(float)offset-10,(float)cellSize*cellCount+20,(float)cellSize*cellCount+20}, 5, snakeColor);
         DrawText("Snake Game",offset,offset - 50,40,snakeColor);
         DrawText(TextFormat("%i",game.score),offset,offset + cellSize*cellCount + 10,40,snakeColor);
         game.draw();
